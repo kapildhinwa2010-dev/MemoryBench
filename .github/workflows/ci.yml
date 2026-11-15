@@ -46,4 +46,4 @@ jobs:
       - name: Compile and smoke-test package
         run: |
           python -m compileall -q memorybench.py tests
-          python -c "from memorybench import HebbianLattice; print(type(HebbianLattice()).__name__)"
+          python -c "from memorybench import HebbianLattice; h = HebbianLattice(8); print(type(h).__name__)"
